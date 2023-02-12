@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap");
+
+body {
+  background: linear-gradient(#9a08dd 0%, #dd4c4f 40%, #7420d3 100%);
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-light {
+  background: #00000000 !important;
+  /* backdrop-filter: blur(3px);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.589); */
+  transition: all 0.5s;
+}
+.bg-light.scrolled {
+  background: #ffffff !important;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.589);
+  transition: all 0.5s;
+}
+.nav a {
+  color: white;
+}
+.nav a:hover {
+  color: rgb(192, 191, 191);
+}
+.nav.scrolled a {
+  color: rgb(155, 49, 255);
+}
+.nav.scrolled a:hover {
+  color: rgb(208, 157, 255);
+}
+.buttonToggle {
+  display: none;
+}
+.initial {
+  font-family: "Vampiro One", cursive;
+  font-size: 30px;
+  margin: -10px;
+}
+.all-body-cover {
+  margin-top: 200px;
+}
+.opening {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+.nama {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+.img-thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.waves {
+  margin-top: -100px;
+  margin-bottom: 70px;
+}
+.firstContainer {
+  background: linear-gradient(
+    #ffffff 0%,
+    #ffffff 50%,
+    #ffffffde 70%,
+    #ffffffb6 75%,
+    #ffffff7e 80%,
+    #ffffff49 85%,
+    #ffffff1f 90%,
+    #ffffff00 100%
+  );
+  margin-top: -80px;
+  margin-bottom: 50px;
+}
+
+.content {
+  padding-bottom: 400px;
+}
+.nameHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.subNameHeading {
+  display: none;
+}
+.content .row {
+  padding-bottom: 40px;
+}
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.itemEdu {
+  padding: 10px;
+}
+.startEnd {
+  margin-bottom: -1px;
+}
+.achive {
+  margin-top: -200px;
+  margin-bottom: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wavesss {
+  margin-bottom: -20px;
+}
+.thirdContainer {
+  background-color: #fff;
+  margin-top: 20px;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.article-container-firstRow {
+  width: 1100px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  text-align: center;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.589);
+  border-radius: 10px;
+}
+.article-container-secondRow {
+  width: 340px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  text-align: center;
+}
+.article-container-thirdRow {
+  width: 530px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  text-align: center;
+}
+
+.categoryy .container .col {
+  margin-bottom: 20px;
+}
+.article-img-holder-firstRow {
+  width: 100%;
+  height: 100%;
+  background: url("../img/porto1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.7s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+}
+.article-img-holder-secondRow {
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 35px;
+}
+.tshirt {
+  background: url("../img/tshirt.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.outer {
+  background: url("../img/outer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.shirt {
+  background: url("../img/shirt.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pants {
+  background: url("../img/pants.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.accessories {
+  background: url("../img/accessories.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.dress {
+  background: url("../img/dress.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.kerudung {
+  background: url("../img/kerudung.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.rok {
+  background: url("../img/rok.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.article-img-holder-thirdRow {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.7s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.article-img-holder-firstRow:hover {
+  transform: scale(1.2);
+  filter: saturate(0%);
+}
+.article-img-holder-secondRow:hover {
+  transform: scale(1.2);
+  filter: saturate(0%);
+}
+.article-img-holder-thirdRow:hover {
+  transform: scale(1.2);
+  filter: saturate(0%);
+}
+.fourthContainer {
+  margin-top: 200px;
+}
+.fivethContainer {
+  margin-top: -150px;
+  background-color: #fff;
+}
+.linkSosmed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.itemSosmed {
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+.contactMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -90px;
+}
