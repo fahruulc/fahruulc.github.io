@@ -35,9 +35,18 @@
   .firstContainer {
     margin-top: -75px;
   }
-  .waves {
-    margin-top: 200px;
-    margin-bottom: 75px;
+.waves {
+    margin-top: 150px;
+    margin-bottom: 70px;
+  }
+  .wavesss {
+    margin-bottom: -25px;
+  }
+  .botWaves {
+    margin-top: -5px;
+  }
+  .wavesContact {
+    margin-bottom: -5px;
   }
   .subNameHeading {
     display: flex;
