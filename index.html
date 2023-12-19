@@ -1,703 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- aos -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
     />
     <link
-      href="//db.onlinewebfonts.com/c/021f3eb1da35b2a042907dc870c00b9c?family=TwentiethCenturyW01-XBdCn"
       rel="stylesheet"
-      type="text/css"
+      href="style.css"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/stylesheet/app.css" />
-    <link rel="stylesheet" href="assets/stylesheet/responsive.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css"
-    />
-    <title>Ruur Profile</title>
-  </head>
-
-  <body>
-    <ul class="nav justify-content-center bg-light fixed-top">
-      <li class="nav-item">
-        <!-- <a class="nav-link" href="#"> -->
-        <a
-          class="buttonToggle"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasWithBothOptions"
-          aria-controls="offcanvasWithBothOptions"
-          ><i class="fas fa-bars toggleSlide"></i
-        ></a>
-
-        <div
-          class="offcanvas offcanvas-start"
-          data-bs-scroll="true"
-          tabindex="-1"
-          id="offcanvasWithBothOptions"
-          aria-labelledby="offcanvasWithBothOptionsLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-              Please select a menu :
-            </h5>
-            <button
-              type="button"
-              class="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul>
-              <li>
-                <a class="nav-link" href="#Biodata">Biodata</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#Achievements">Achievements</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#Projects">Projects</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#Certifications">Certifications</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#Contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- </a> -->
-      </li>
-      <li class="nav-item">
-        <a class="nav-link initial" href="#" aria-current="page">Ruur</a>
-      </li>
-
-      <li class="nav-item-item">
-        <a class="nav-link" href="#Biodata">Biodata</a>
-      </li>
-      <li class="nav-item-item">
-        <a class="nav-link" href="#Achievements">Achievements</a>
-      </li>
-      <li class="nav-item-item">
-        <a class="nav-link" href="#Projects">Projects</a>
-      </li>
-      <li class="nav-item-item">
-        <a class="nav-link" href="#Certifications">Certifications</a>
-      </li>
-      <li class="nav-item-item">
-        <a class="nav-link" href="#Contact">Contact</a>
-      </li>
-    </ul>
-    <div class="all-body-cover">
-      <img
-        width="200px"
-        src="assets/img/profileImage.jpg"
-        class="img-thumbnail rounded-circle mx-auto d-block"
-        alt="..."
-      />
-      <div class="nama">
-        <h4 class="text-center fw-bold">Fachrur Rizhky Al Fadillah</h4>
-        <h5 class="text-center">Backend Developer</h5>
-      </div>
-
-      <svg
-        class="waves"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,160L48,149.3C96,139,192,117,288,144C384,171,480,245,576,272C672,299,768,277,864,250.7C960,224,1056,192,1152,186.7C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-      <div class="firstContainer">
-        <div class="content">
-          <h2
-            data-aos="fade-up"
-            data-aos-duration="800"
-            id="Biodata"
-            class="nameHeading fw-bold"
-          >
-            BIODATA
-          </h2>
-          <div class="container text-center">
-            <div class="row">
-              <div
-                data-aos="fade-up"
-                data-aos-duration="800"
-                class="col-sm-4 mb-2"
-              >
-                Hello, introduce my name is Fachrur Rizhky Al Fadillah who is
-                often called Fahrul. I am a back-end web developer using
-                technology from JavaScript and PHP. For now, I am a graduate of
-                a vocational high school with a major in computer and network
-                engineering, graduating in 2022. I have had many achievements
-                and awards while I was at school, I also served as chairman of
-                the programming club in my school's extracurriculars.
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="800"
-                class="col-sm-4 mb-2"
-              >
-                <h4 class="subNameHeading fw-bold">EDUCATION</h4>
-                <div class="education">
-                  <!-- Button trigger modal -->
-                  <p class="startEnd">Started on Jul 2010</p>
-                  <button
-                    type="button"
-                    class="btn btn-danger itemEdu"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal1"
-                  >
-                    SDN Karangraharja 01
-                  </button>
-
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal1"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">
-                            Achievement
-                          </h5>
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body">champion in the class</div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="startEnd">Finished on Jun 2016</p>
-                  <i class="fas fa-arrow-circle-down itemEdu"></i>
-                  <!-- <i class="fas fa-arrow-circle-down itemEdu"></i> -->
-                  <p class="startEnd">Started on Jul 2016</p>
-                  <button
-                    type="button"
-                    class="btn btn-danger itemEdu"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal2"
-                  >
-                    SMPN 2 North Cikarang
-                  </button>
-
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal2"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">
-                            Achievement
-                          </h5>
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body">champion in the class</div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="startEnd">Finished on Jun 2019</p>
-                  <i class="fas fa-arrow-circle-down itemEdu"></i>
-                  <!-- <i class="fas fa-arrow-circle-down itemEdu"></i> -->
-                  <p class="startEnd">Started on Jul 2019</p>
-                  <button
-                    type="button"
-                    class="btn btn-danger itemEdu"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal3"
-                  >
-                    SMKN 2 West Cikarang
-                  </button>
-
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal3"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">
-                            Achievement
-                          </h5>
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body">
-                          1. 8th place in the Bekasi district web technology
-                          competition. <br />
-                          2. 1st place in the Bekasi district scientific work
-                          competition. <br />
-                          3. Won a silver medal at the National Science Olympiad
-                          in Physics. <br />
-                          4. Won a silver medal at the National Science Olympiad
-                          in Chemistry. <br />
-                          5. Won a bronze medal at the National Science Olympiad
-                          in Biology. <br />
-                          6. Microsoft office webinar resource persons. <br />
-                          7. Head of programming club SMKN 2 West Cikarang.
-                          <br />
-                          8. Champion class
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="startEnd">Finished on Jun 2022</p>
-                  <i class="fas fa-arrow-circle-down itemEdu"></i>
-                  <!-- <i class="fas fa-arrow-circle-down itemEdu"></i> -->
-                  <p class="startEnd">Started on</p>
-                  <button
-                    type="button"
-                    class="btn btn-danger itemEdu"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal4"
-                  >
-                    University (Coming Soon)
-                  </button>
-
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal4"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">
-                            Achievement
-                          </h5>
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body">Not yet</div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div data-aos="fade-up" data-aos-duration="800" class="col-sm-4">
-                My hobby is making websites and looking for new things or
-                technologies that I can apply to my website, then I usually
-                upload them to GitHub as an archive as well as my repository.
-                Apart from creating a website, I also have an interest in being
-                a content creator, I have a TikTok account and also YouTube
-                where I express my work
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- second -->
-    <div class="secondContainer">
-      <h2
-        data-aos="fade-up"
-        data-aos-duration="800"
-        id="Achievements"
-        class="achive fw-bold"
-      >
-        ACHIEVEMENTS
-      </h2>
-      <div class="container mx-auto">
-        <div class="row">
-          <div class="col-sm-3">
-            <div
-              data-aos="fade-up"
-              data-aos-duration="800"
-              class="card text-dark mb-3 mx-auto"
-              style="max-width: 18rem"
-            >
-              <div class="card-header">Organization</div>
-              <div class="card-body">
-                <h5 class="card-title">Programming Club</h5>
-                <p class="card-text">
-                  Became general chairman of the extracurricular programming
-                  club at Vocational High Schools.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div
-              data-aos="fade-up"
-              data-aos-duration="800"
-              class="card text-dark mb-3 mx-auto"
-              style="max-width: 18rem"
-            >
-              <div class="card-header">Competence</div>
-              <div class="card-body">
-                <h5 class="card-title">Web Technology</h5>
-                <p class="card-text">
-                  Became the youngest participant and succeeded in becoming a
-                  champion in the Bekasi district Web Technology competition.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div
-              data-aos="fade-up"
-              data-aos-duration="800"
-              class="card text-dark mb-3 mx-auto"
-              style="max-width: 18rem"
-            >
-              <div class="card-header">Technique</div>
-              <div class="card-body">
-                <h5 class="card-title">Programming Concept</h5>
-                <p class="card-text">
-                  Able to apply the concept of MVC and Clean Code to the
-                  program.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div
-              data-aos="fade-up"
-              data-aos-duration="800"
-              class="card text-dark mb-3 mx-auto"
-              style="max-width: 18rem"
-            >
-              <div class="card-header">Back-end Developer</div>
-              <div class="card-body">
-                <h5 class="card-title">JavaScript</h5>
-                <p class="card-text">
-                  Able to create websites with JavaScript technology such as
-                  MongoDB Express EJS Node.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- third -->
-    <svg
-      class="wavesss"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-    >
-      <path
-        fill="#ffffff"
-        fill-opacity="1"
-        d="M0,0L48,53.3C96,107,192,213,288,234.7C384,256,480,192,576,181.3C672,171,768,213,864,245.3C960,277,1056,299,1152,298.7C1248,299,1344,277,1392,266.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-      ></path>
-    </svg>
-    <div class="thirdContainer">
-      <h2
-        data-aos="fade-up"
-        data-aos-duration="800"
-        id="Projects"
-        class="projects fw-bold"
-      >
-        PROJECTS
-      </h2>
-      <div class="categoryy">
-        <div class="container">
-          <div class="row justify-content-md-center">
-            <div data-aos="fade-up" data-aos-duration="800" class="col">
-              <div class="article-container-firstRow text-uppercase mx-auto">
-                <a
-                  href="https://ruurmerch.000webhostapp.com/"
-                  style="text-decoration: none"
-                >
-                  <div class="article-img-holder-firstRow">Online Shop</div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="row justify-content-md-center">
-            <div class="col">
-              <div class="article-container-secondRow text-uppercase mx-auto">
-                <a href="#" style="text-decoration: none">
-                  <div class="article-img-holder-secondRow tshirt">t-shirt</div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="article-container-secondRow text-uppercase mx-auto">
-                <a href="#" style="text-decoration: none">
-                  <div class="article-img-holder-secondRow outer">outer</div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="article-container-secondRow text-uppercase mx-auto">
-                <a href="#" style="text-decoration: none">
-                  <div class="article-img-holder-secondRow shirt">shirt</div>
-                </a>
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="row justify-content-md-center">
-            <div class="col">
-              <div class="article-container-secondRow text-uppercase mx-auto">
-                <a href="#" style="text-decoration: none">
-                  <div class="article-img-holder-secondRow pants">pants</div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="article-container-secondRow text-uppercase mx-auto">
-                <a href="#" style="text-decoration: none">
-                  <div class="article-img-holder-secondRow accessories">
-                    accessories
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="article-container-secondRow text-uppercase mx-auto">
-                <a href="#" style="text-decoration: none">
-                  <div class="article-img-holder-secondRow dress">DRESS</div>
-                </a>
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="row justify-content-md-center">
-            <div class="col">
-              <div class="article-container-thirdRow text-uppercase mx-auto">
-                <a href="#" style="text-decoration: none">
-                  <div class="article-img-holder-thirdRow kerudung">
-                    kerudung
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="article-container-thirdRow text-uppercase mx-auto">
-                <a href="#" style="text-decoration: none">
-                  <div class="article-img-holder-thirdRow rok">rok</div>
-                </a>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </div>
-    <svg
-      class="botWaves"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-    >
-      <path
-        fill="#ffffff"
-        fill-opacity="1"
-        d="M0,64L48,101.3C96,139,192,213,288,224C384,235,480,181,576,181.3C672,181,768,235,864,229.3C960,224,1056,160,1152,138.7C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-      ></path>
-    </svg>
-    <div class="fourthContainer">
-      <h2
-        data-aos="fade-up"
-        data-aos-duration="800"
-        id="Certifications"
-        class="achive text-center fw-bold"
-      >
-        CERTIFICATION
-      </h2>
-      <div class="container">
-        <div
-          data-aos="fade-up"
-          data-aos-duration="800"
-          class="table-responsive"
-        >
-          <table class="table mx-auto table-hover table-light table-striped">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Organizer</th>
-                <th scope="col">Date</th>
-                <th scope="col">Credential</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Cloud Practitioner Essentials</td>
-                <td>Dicoding & AWS</td>
-                <td>March 1, 2023</td>
-                <td>
-                  <a class="btn btn-primary mx-info" href="https://drive.google.com/file/d/19rnhx_DibRpnkFwaBxljR6cNYqEc-2cr/view?usp=share_link" role="button"
-                    >View</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Belajar Membuat Aplikasi Back-End untuk Pemula</td>
-                <td>Dicoding & AWS</td>
-                <td>March 6, 2023</td>
-                <td>
-                  <a class="btn btn-primary mx-info" href="https://drive.google.com/file/d/1ScF8zRGMArwRD4_2WxR0tbsIbVehPW5y/view?usp=share_link" role="button"
-                    >View</a
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-    <svg
-      class="wavesContact"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-    >
-      <path
-        fill="#ffffff"
-        fill-opacity="1"
-        d="M0,32L60,58.7C120,85,240,139,360,133.3C480,128,600,64,720,69.3C840,75,960,149,1080,154.7C1200,160,1320,96,1380,64L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-      ></path>
-    </svg>
-    <div class="fivethContainer">
-      <h2 id="Contact" class="contactMe fw-bold">CONTACT</h2>
-      <div class="container">
-        <div class="linkSosmed">
-          <a
-            class="itemSosmed"
-            href="https://www.linkedin.com/in/fahruul-c"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a class="itemSosmed" href="https://instagram.com/fahruul.c"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a class="itemSosmed" href="https://www.tiktok.com/@fahruul.c"
-            ><i class="fab fa-tiktok"></i
-          ></a>
-          <a class="itemSosmed" href="https://youtube.com/@fahruul.c"
-            ><i class="fab fa-youtube"></i
-          ></a>
-          <a class="itemSosmed" href="fachrurrizhkyalfadillah@gmail.com"
-            ><i class="fab fa-google"></i
-          ></a>
-          <a class="itemSosmed" href="https://github.com/fahruulc"
-            ><i class="fab fa-github"></i
-          ></a>
-        </div>
-        <p class="text-center">Created by <a href="#">@fahruul.c</a></p>
-      </div>
-    </div>
-    <script src="assets/stylesheet/app.js"></script>
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="nav"
+      style="text-align: center"
+    >
+      <ul>
+        <li><h2 href="Home">ARIF RAHMAN</h2></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="header">
+        <h1 style="text-align: center">Pengenalan Komputer</h1>
+        <hr />
+        <img
+          src="1.png"
+          alt="Pengenalan Komputer"
+        />
+        <h3>
+          <br />
+          <br />Defini Komputer
+        </h3>
+        <p>
+          <br />
+
+          Komputer lebih dikenal oleh masyarakat sebagai alat teknologi atau elektronik yang dapat menginput data, memproses data, dan menghasilkan output berupa informasi. Kata komputer berasal dari bahasa Yunani yakni Computare artinya
+          adalah menghitung. Dengan perkembangan teknologi yang semakin canggih, fungsi komputer dari tahun ke tahun selalu berkembang, tidak hanya sebagai alat untuk menghitung saja. Komputer sudah menjadi perlengkapan dan kebutuhan hidup
+          karena kemajuan teknologi yang sangat pesat perkembangannya . <br />
+          <br />Secara umum pada dasarnya komputer memiliki ciri-ciri sebagai berikut:
+        </p>
+        <p>
+          a. Komputer yaitu kumpulan dari beberapa alat elektronik yang digabungkan. <br />b. Komputer dapat menginput, lalu memproses inputan, dan menyimpan data. <br />c. Komputer dapat menghasilkan informasi sesuai permintaan dari user.
+          <br /><br />Tiga hal utama di dalam sebuah komputer, yakni :<br />
+          a. Alat Masukan (Input Device) seperti Keyboard, Mouse, dll <br />b. Alat Pemroses Data (Processor) <br />c. Alat Keluaran (Output Device) seperti printer, speaker, dan monitor.
+        </p>
+        <br /><br />
+        <h3>Generasi Komputer dari Tahun ke Tahun</h3>
+        <br />
+        <p>
+          Pada setiap perkembangan komputer, dapat dilihat dari bentuk, kegunaan, tampilan dan prosedur-prosedur yang dapat dilakukan. Jika pada komputer generasi pertama menjadi penemuan awal dari sebuah tabung yang hampa udara sebagai
+          alat penguat jaringan atau sinyal, lalu pada generasi berikutnya mulai ditemukannya suatu transistor yang dapat digunakan sebagai alat menstabilkan tegangan listrik, kemudia pada komputer generasi ke-tiga mulai dikembangkannya
+          teknologi IC Chip yang berevolusi sebagai Microprocessor yang masih digunakan hingga saat ini.
+        </p>
+        <br /><br />
+        <h3>Generasi Pertama Komputer yaitu pada tahun (1941 - 1952)</h3>
+        <br />
+        <p>
+          Pada awal masa dimana komputer ditemukan, tujuan utama dari komputer adalah untuk membantu proses perhitungan, kemudian komputer mulai dengan program dan diterapkan pada beberapa tujuan, salah satunya untuk perhitungan matematis
+          untuk tujuan perang. Terjadi persaingan antar negara yang terlibat dalam Perang Dunia 2 dimasa awal generasi komputer pertama. Tabung hampa udara yang ditemukan memiliki fungsi untuk penguat sinyal, dimana ini adalah komponen khas
+          dari komputer generasi pertama. Pada tahun 1946 ditambahkan komponen-komponen dan akhirnya komputer yang ada berukuran besar, memiliki berat yang luar biasa dan pastinya memiliki harga yang mahal. Komputer tersebut adalah ENIAC
+          yang di dalamnya memiliki 18.800 tabung hampa udara dan memiliki bobot 30 ton. Karena memiliki ukuran yang sangat besar dan sangat berat sampai-sampai komputer ini memiliki ruangan kelas tersendiri.
+        </p>
+        <br /><br />
+        <p>
+          Generasi komputer pertama berdasarkan informasi yang diperolah memiliki ciri-ciri, sebegai berikut:<br />
+
+          1.) Instruksi yang ditulis ditujukan khusus untuk mengerjakan suatu tugas atau fungsi yang spesifik saja.<br />
+          2.) Bentuk komputer generasi pertama sangatlah besar dan memerlukan ruangan yang sangat luas karena menggunakan vacuum tube (tube vakum) dan magnet bentuk silinder (silinder magnetic).<br />
+          3.) Proses komputasi masih sangat rendah dan boros listrik.<br />
+          4.) Pada generasi komputer pertama ini hanya beberapa orang yang dapat mengoperasikannya, dikarenakan kode mesin yang rumit. <br />5.) Belum adanya bahasa pemrograman dan sistem operasi.
+        </p>
+        <br /><br />
+        <h3>Generasi Kedua Komputer yaitu pada tahun (1952 - 1956 - 1958)</h3>
+        <br />
+        <p>
+          Pada komputer generasi kedua, bentuk dari komputer sudah memiliki bentuk agak lebih kecil dibandingkan dengan komputer generasi pertama. Ciri khas komputer generasi kedua adalah ditemukannya Transistor (transfer resistor).
+          Transistor memiliki tiga lapis bahan baku yang terdiri dari basic, collector dan emmiter. Pada komputer generasi kedua energi yang digunakan relatif hemat, bisa lebih diandalkan, dan kecepatannya relatif lebih cepat dilihat dari
+          performa dan proses komputasinya. Hal yang membuat komputer generasi kedua ini menarik adalah sudah digunakannya bahasa pemrograman yaitu COBOL (Common Business Oriented Language) dan FORTRAN (Formula Translator).
+        </p>
+        <br /><br />
+        <h3>Generasi Ketiga Komputer yaitu pada tahun (1958 – 1970)</h3>
+        <br />
+        <p>
+          Pada komputer generasi ketiga ini, secuil silicium adalah salah satu penemuan pada masa ini yang memiliki bentuk ukuran hanya beberapa milimeter, yang lebih dikenal sebagai IC-Chip (Integrated Circuit). IC-Chip mulai digunakan
+          dari komputer di generasi ketiga. IC di dalam sejarah komputer memiliki peranan sangat besar. IC dapat meminimalkan panas yang dihasilkan oleh komputer, mampu mengintegrasikan komponen ke dalam satu chip, yang membuat ukuran
+          sebuah komputer semakin kecil dan cenderung tidak cepat panas. Cincin magnetic yang memagnetisasi secara berlawanan atau satu arah, dengan men-sinyalkan kondisi sebagai "ON" atau "OFF" lalu diimplementasikan menjadi konsep 0 dan 1
+          bilangan biner. Setiap memori memiliki 924 cincin magnetic yang pada setiap bitnya terdapat jutaan bit informasi yang berada pada satu chip tunggal yang ukuran sangat kecil. Contohnya seperti IBM S-360 pada komputer pertama yang
+          mempergunakan IC dan pada tahun 1964.
+        </p>
+        <br /><br />
+        <h3>Generasi Keempat Komputer yaitu pada tahun (1970 – 1980)</h3>
+        <br />
+        <p>
+          Yang menjadi ciri khas pada generasi keempat adalah Microprocessor dimana terdapat pemadatan ribuan IC pada sebuah Chip. Pada generasi ini harga yang ditawarkan semakin murah dikarenakan ukuran yang akan semakin mengecil dan
+          memiliki kemampuan yang semakin meningkat. Microprocessor adalah awal mulanya kelahiran komputer personal. Intel Corp pada tahun 1971, dengan Microprocessor pertamanya serie 4004. Apple I Komputer yang dikembangkan oleh Steve
+          Wozniak dan Steve Jobs merupakan contoh dari komputer generasi keempat yang memasukan sebuah microprocessor ke dalam circuit board komputer. Kemudian muncul TRS Model 80 dengan jenis processor Motorola 68000 dan Zilog Z-80 yang
+          menggunakan 64Kb RAM standard. Pada generasi ini komputer mulai mudah digunakan, antara lain dengan adanya tampilan GUI (Graphic User Interface), pemakaian mouse, dan lain-lain.
+        </p>
+        <br /><br />
+        <h3>Generasi Kelima-Sekarang (1980 – saat ini)</h3>
+        <br />
+        <p>
+          Munculnya generasi kelima yaitu dengan datangannya: LSI (Large Scale Integration) dimana ini dilakukan dengan cara pemadatan ribuan Microprocessor yang dimasukan pada sebuah Microprocesor. Munculnya semiconductor dan
+          microprocessor juga merupakan ciri khas pada generasi ini. Dimana perusahaan seperti Intel Corporation, Motorola, Zilog dan lainnya sedang membuat Microprocessor. Banyak kita temui Microprocessor buatan Intel dengan model 4004,
+          Pentium dsb. <br />Contoh pada Intel Corporation yaitu Pentium 4 dimana penemuan ini diharapkan bisa menutupi kekurangan yang terdapat pada produk sebelumnya. Selain itu, pada komputer Pentium 4 kecepatan serta kehandalan semakin
+          bertambah, seperti kecepatan memproses mengirim atau menerima input lebih cepat, dan tampilan pada suatu gambar terlihat lebih tajam serta halus.
+        </p>
+        <br /><br />
+        <h3>Generasi Keenam Komputer (Masa Depan)</h3>
+        <br />
+        <p>
+          Perkembangan komputer pada era generasi ini disebut sebagai komputer masa depan. Para penggiat teknologi atau para peneliti banyak memiliki ide hingga memiliki impian-impian begitu pula dengan para pengguna yang ingin melihat atau
+          membuat komputer lebih canggih untuk masa depan guna dapat membantu manusia dalam mengerjakan aktifitas serta kegiatan sehari-hari. Contohnya seperti penggunaan robot yang dapat berperan serta dalam kegiatan manusia. Hal yang
+          didukung oleh komputer masa depan adalah komputer dengan kemampuan untuk yang dapat meminimalisir proses menggunakan baris program atau dikenal dengan programless. Ciri-ciri komputer generasi keenam secara umum yaitu memiliki
+          bentuk yang lebih beragam, tingkat kecerdasaannya menyerupai manusia, lebih canggih, dan mampu melakukan proses prediksi yang akan terjadi dan masih banyak kecanggihan lainnya dimana kecanggihan tersebut lebih mutakhir dari
+          teknologi-teknologi saat ini.
+        </p>
+        <br /><br />
+        <h3>Komputer dapat digolongkan berdasarkan:</h3>
+        <br /><br />
+        <p>
+          a. Processor Jenis komputer berdasarkan prosesornya digolongkan menjadi tiga, yaitu Mainframe, Minicomputer dan Personal Computer (PC). <br /><br />1.) Mainframe Mainframe merupakan komputer yang memiliki prosesor dengan kemampuan
+          yang sangat besar, dikarenakan komputer jenis ini ditunjukan untuk banyak pemakai. Komputer mainframe memiliki CPU disatu mesin, memiliki perangkat penyimpanan, komunikasi disatu mesin tersendiri yang dihubungkan dengan banyak
+          terminal yang terdiri dari monitor dan keyboard saja. Komputer mainframe biasa digunakan di perusahaan yang bersekala besar, contohnya adalah kantor pusat penerbangan nasional. <br /><br />2.) Minicomputer Minicomputer merupakan
+          sisi mini dari komputer mainframe. Jika pada mainframe dapat memiliki terminal yang jumlahnya ribuan maka mini hanya dapat sampai puluhan atau ratusan. Komputer jenis ini tentunya sekarang jarang dipergunakan, dikarenakan PC lebih
+          flexible dan perkembangannya pesat dengan adanya teknologi Local Area Network (LAN). <br /><br />3.) Personal Computer (PC) Personal Computer (PC) merupakan komputer diperuntukan hanya satu pemakai dengan satu pemakai program
+          aplikasi. Perangkatnya yang simpel dan dapat diringkas ke dalam satu mesin saja. Komputer ini mempunyai keyboard, monitor, dan CPU.
+        </p>
+        <br /><br />
+        <h3>Jenis Komputer Berdasarkan Bentuk dan Ukuran Fisik</h3>
+        <br /><br />
+        <p>
+          Komputer tak hanya dapat digolongkan dari kemampuannya saja tapi juga dari bentuk dan ukuran, berikut jenis komputer berdasarkan bentuk dan ukurannya:<br /><br />
+          1) Tower <br />Towerkarenakan ukuran yang relatif besar biasanya jenis ini menaruhnya disamping ataupun dibawah meja. Jenis komputer ini menyediakan banyak ruang di dalamnya dan menyediakan banyaknya expansion slot (tempat
+          memasang card tambahan), sehingga dapat menambahkan berbagai perangkat atau accessories pendukung lainnya. <br />2) Dekstop <br />Desktop yaitu komputer yang sedikit lebih kecil ukurannya dari Tower, pada jenis komputer ini
+          tentunya banyak digunakan karena harganya relatif lebih terjangkau jika dibandingkan dengan bentuk dan ukuran yang lain. Komputer pada masa ini yang banyak kita temui dan kita gunakan adalah jenis desktop. <br />3)Portable<br />
+          Komputer jenis Portable memiliki ukuran lebih kecil dari jenis komputer desktop, hal ini bisa terjadi dikarenakan adanya bagian yang dirangkai menjadi satu kotak saja, sehingga lebih mudah untuk dibawa. <br />4) Notebook
+          <br />Komputer jenis ini besarnya hanya seukuran buku saja. Ukuran komputer Notebook hanya sebesar kertas kuarto, yaitu 8½ x 11 inch, tebalnya berkisar 1 inch sampai 1½ inch dan memiliki berat antara 4 kg sampai 6 kg. <br />5)
+          Subnotebook <br />Jenis komputer ini memiliki ukuran yang lebih kecil jika dibandingkan dengan komputer Notebook dikarenakan adanya komponen pada perangkat yang tidak dipasang, contohnya seperti Diskdrive. <br />6) Palmtop
+          <br />Palmtop atau disebut juga komputer dalam genggaman, hal ini karena ukuran komputer tersebut yang sangat kecil. Komputer ini sering disebut juga dengan handheld komputer. Komputer jenis ini memiliki kelemahan diantaranya
+          seperti display tampilan layar, keyboard dan monitor yang terlalu kecil sehingga menyulitkan pemakai.
+        </p>
+        <br /><br />
+        <h3>Komputer Berdasarkan Jenis Data yang Diolah</h3>
+        <br /><br />
+        <p>
+          Komputer berdasarkan dari jenis data yang diolah dibedakan menjadi 3 bagian yaitu: <br /><br />1) Komputer Analog<br />
+          Data kualitatif biasanya diolah menggunakan komputer jenis ini, dimana komputer dapat bekerja secara berkelanjutan dan paralel, dan tidak perlu adanya bahasa perantara. Kekurangan dari komputer jenis ini adalah terletak pada
+          faktor keakuratannya, komputer digital lebih akurat dibandingkan dengan komputer analog.<br />
+          2) Komputer Digital<br />
+          Data kuantitatif biasanya diolah menggunakan jenis komputer ini, contohnya seperti angka, huruf, kombinasi angka dan huruf, karakterkarakter khusus dan tentunya membutuhkan bahasa perantara. Contohnya komputer PC, dan
+          lain-lain.<br />
+          3) Komputer Hybrid<br />
+          Komputer jenis ini adalah gabungan dari komputer analog dengan komputer digital. Di dalam aplikasi yang khusus dibutuhan suatu komputer yang mampu menyelesaikan permasalah lebih cepat dari komputer analog dan lebih tepat dari
+          komputer digital. Contohnya Facsimile.
+        </p>
+        <br /><br />
+        <h3>Komputer Berdasarkan Jenis Data yang Diolah</h3>
+        <br /><br />
+        <p>
+          Jenis komputer berdasarkan penggunaanya adalah sebagai berikut: <br />1) General Purpose <br />Computer Masalah bisnis serta masalah lainnya cocok akan mudah dipecahkan dengan menggunakan komputer jenis ini. Selain itu,
+          untuk.komputer pribadi.sangat bagus.menggunakan jenis general purpose computer.<br />
+          2) Special Purpose<br />.Computer Masalah yang dipecahkan oleh komputer ini biasanya adalah masalah yang memiliki spesifik khusus. Tidak semua masalah bisa dipecahkan. Suatu program untuk proses tertentu dimasukkan ke dalam
+          komputer.
+        </p>
+      </div>
+      <div class="footer">
+        <p class="copy">&copy Copyright 2023 by <a href="https://www.instagram.com/_arifrahman29/">Arif rahman</a></p>
+      </div>
+    </div>
   </body>
 </html>
